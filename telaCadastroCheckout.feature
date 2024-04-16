@@ -13,22 +13,21 @@ E acessar a tela de checkout
 Então os campos obrigatórios da tela devem estar sinalizados com asterisco
 
 
-Contexto: 
-Dado que esteja na tela de checkout
-
-
 Cenário: E-mail com formato inválido
+Dado que esteja na tela de checkout
 Quando preencher o campo e-mail com formato inválido
 Então o sistema deve exibir mensagem de erro
 
 
 Cenário: Campos obrigatórios sem preenchimento 
+Dado que esteja na tela de checkout
 Quando tentar finalizar a compra sem preenchimento dos campos obrigatórios
 Então o sistema deve exibir mensagem de alerta
 E não permitir finalizar a compra
 
 
 Esquema do Cenário: validar inserção de múltiplos e-mails
+Dado que esteja na tela de checkout
 Quando preencher o campo e-mail com <email>
 Então o sistema deve exibir <mensagem>
 

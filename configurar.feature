@@ -17,27 +17,31 @@ Então o sistema deve notificar a necessidade de preenchimento para os campos de
 
 
 Cenário: Configuração com quantidade de produtos diferente de 10
-E tenha realizado o preenchimento dos campos obrigatórios
-E tenha selecionado uma quantidade de produtos diferente de 10 na seleção de quantidade
-Quando inserir a configuração de produto no carrinho
+
+Quando realizar preenchimento dos campos obrigatórios
+E selecionar uma quantidade de produtos diferente de 10 na seleção de quantidade
+E inserir a configuração de produto no carrinho
 Então o sistema deve notificar a obrigatóriedade de seleção de 10 produtos na opção de quantidade
 
 
 Cenário: Configuração com 10 produtos
-E tenha realizado o preenchimento dos campos obrigatórios
-E tenha inserido a quantidade de 10 produtos na seleção de quantidade
-Quando tentar inserir a configuração de produto no carrinho
+
+Quando realizar preenchimento dos campos obrigatórios
+E inserir a quantidade de 10 produtos na seleção de quantidade
+E tentar inserir a configuração de produto no carrinho
 Então o sistema deve notificar a obrigatóriedade de seleção de 10 produtos na opção de quantidade
 
 
 Cenário: Retorno ao estado inicial utilizando botão "limpar"
-E tenha feito uma configuração de produto
-Quando clicar no botão "limpar"
+
+Quando realizar uma configuração de produto
+E clicar no botão "limpar"
 Então o sistema deve retornar o conteúdo da tela para o estado inicial
 
 
 Cenário: Inserção de configuração de produto em carrinho
-E tenha preenchido todos os campos obrigatórios
-E tenha selecionado a quantidade de 10 produtos
-Quando realizar a inserção da configuração de produto no carrinho
+
+Quando preencher todos os campos obrigatórios
+E selecionar quantidade de 10 produtos
+E realizar a inserção da configuração de produto no carrinho
 Então o sistema deve realizar a inserção com sucesso
